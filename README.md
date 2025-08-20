@@ -13,6 +13,49 @@ Dollar Bank Customer Churn Analysis using SQL + Python + Tableau:  An end-to-end
 
 Dollar Bank was concerned that more and more customers were leaving its credit card services. They asked for a seasoned Data Analyst to analyze the problem for them in order to understand the main reasons for customers leaving the services. They also needed me to come up with recommendations for how the bank can mitigate further customer churns. Eventually, the bank wanted to proactively implement these recommendations in order to keep their customers happy.
 
+## Data Description
+
+In this task, a few datasets are provided:
+
+### 1. BankChurners.csv
+This file contains basic information about each client (**10 columns**):
+
+- **CLIENTNUM** – Client number. Unique identifier for the customer holding the account.  
+- **Attrition_Flag** – Internal event (customer activity) variable – if the client had churned (attrited) or not (existing).  
+- **Dependent_Count** – Demographic variable – Number of dependents.  
+- **Card_Category** – Product Variable – Type of Card (Blue, Silver, Gold, Platinum).  
+- **Months_on_book** – Period of relationship with bank.  
+- **Months_Inactive_12_mon** – No. of months inactive in the last 12 months.  
+- **Contacts_Count_12_mon** – No. of contacts in the last 12 months.  
+- **Credit_Limit** – Credit limit on the credit card.  
+- **Avg_Open_To_Buy** – Open to buy credit line (average of last 12 months).  
+- **Avg_Utilization_Ratio** – Average card utilization ratio.  
+
+---
+
+### 2. basic_client_info.csv
+This file contains some basic client info per each client (**6 columns**):
+
+- **CLIENTNUM** – Client number. Unique identifier for the customer holding the account.  
+- **Customer_Age** – Demographic variable – Customer's age in years.  
+- **Gender** – Demographic variable – M = Male, F = Female.  
+- **Education_Level** – Demographic variable – Educational qualification of the account holder (e.g., high school, college graduate, etc.).  
+- **Marital_Status** – Demographic variable – Married, Single, Divorced, Unknown.  
+- **Income_Category** – Demographic variable – Annual income category of the account holder (`<40K, 40K–60K, 60K–80K, 80K–120K, >120K, Unknown`).  
+
+---
+
+### 3. enriched_churn_data.csv
+This file contains enriched data about each client (**7 columns**):
+
+- **CLIENTNUM** – Client number. Unique identifier for the customer holding the account.  
+- **Total_Relationship_Count** – Total number of products held by the customer.  
+- **Total_Revolving_Bal** – Total revolving balance on the credit card.  
+- **Total_Amt_Chng_Q4_Q1** – Change in transaction amount (Q4 over Q1).  
+- **Total_Trans_Amt** – Total transaction amount (last 12 months).  
+- **Total_Trans_Ct** – Total transaction count (last 12 months).  
+- **Total_Ct_Chng_Q4_Q1** – Change in transaction count (Q4 over Q1).
+
 ---
 
 <br>
